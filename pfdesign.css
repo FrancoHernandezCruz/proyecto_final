@@ -1,0 +1,606 @@
+/*----------------------------------------------LOGIN----------------------------------------------*/
+#bodylogin{
+  justify-content: center;
+  display: flex;
+  background-color: #12455e;
+}
+/*contenedor logo*/
+#contlogo{
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  text-align: center;
+  font-size: 4em;
+  color: white;
+}
+/*contenedor de login*/
+#contlogin{
+  background-color:white ;
+  width: 406px;
+  height: 330px;
+  position: absolute;
+  top: 30%;
+  border-radius: 20px;
+}
+/*botón iniciar sesión*/
+#login{
+  background-color: #062737;
+  color: white;
+  width: 306px;
+  height: 40px;
+  bottom: 30px;
+  left: 50px;
+  position: absolute;
+  font-size: 20px;
+}
+/*input correo*/
+#login_correo{
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+/*label correo*/
+#logcorreo{
+  position: absolute;
+  left: 50px;
+  top: 25px;
+  font-size: 20px;
+}
+/*input contraseña*/
+#login_contra{
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  left: 50px;
+  top: 130px;
+}
+/*label contraseña*/
+#logcontra{
+  position: absolute;
+  left: 50px;
+  top: 105px;
+  font-size: 20px;
+}
+/*combobox idioma*/
+#language{
+  left: 50px;
+  top: 200px;
+  position: absolute;
+  width: 306px;
+}
+
+/*----------------------------------------------INICIO----------------------------------------------*/
+body{
+  background-color: #efefef;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+a
+{
+  text-decoration:none; 
+  color: white;
+}
+/*barra superior*/
+#continicio{
+  background-color: #062737;
+  height: 50px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+}
+/*poner tipo/nombre de usuario*/
+#user{
+  right: 5px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+}
+/*menú*/
+#contmenu{
+  background-color: #12455e;
+  top: 50px;
+  left: 0%;
+  position: absolute;
+  color: white;
+  width: 150px;
+  height: 100%;
+  position: fixed;
+}
+/*contenedor principal*/
+#contenedor{
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+  z-index: 1;
+}
+/*clase para diseño de contenedores dashboard*/
+.cont{
+  width: 500px;
+  height: 300px;
+  background-color: rgba(243, 175, 98, 0.3);
+  margin: 10px;
+  font-size: 2em;
+  color: #12455e;
+  text-align: center;
+  border-radius: 15px;
+  z-index: 2;
+}
+/*menu hover*/
+.mn:hover{
+  background-color: white;
+  color: #062737;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  
+}
+/*clase opciones de menú*/
+.mn{
+  font-size: 20px;
+  padding: 10px;
+}
+/*clase diseño div agregar nuevo*/
+.nuevo{
+  background-color: #12455e;
+  color: white;
+  width: 75%;
+  font-size: 20px;
+  z-index: 2;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 15px;  
+  justify-content: center;
+}
+/*clase para diseño de tabla de consultas*/
+.tablita{
+  width: 75%;
+  height: 100%;
+  background-color: rgba(243, 175, 98, 0.3);
+  margin: 10px;
+  font-size: 20px;
+  color: #12455e;
+  border-radius: 15px;
+  z-index: 2;
+  padding: 20px;
+  justify-content: center;
+  position: relative;
+}
+/*----------------------------------------------EMPLEADOS----------------------------------------------*/
+thead{
+  background-color: #062737;
+  color: white;
+  text-align: center;
+}
+.md{
+  cursor: pointer;
+}
+legend{
+  font-size: 25px;
+  text-align: center;
+}
+.tabla_nuevo_emp td{
+  height: 50px;
+  width: 15%;
+}
+.tabla_emp td{
+  width: 25%;
+  height: 30px;
+  border-bottom: 1px solid #062737;
+}
+#cont_botones{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.botones{
+  background-color: white;
+  color: #062737;
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position: relative;
+}
+#buscar{
+  right: 80px;
+  position: absolute;
+}
+#buscar_boton{
+  right: 0%;
+  position: absolute;
+}
+/*----------------------------------------------AUTOS----------------------------------------------*/
+.tabla_nuevo_auto td{
+  height: 50px;
+  width: 25%;
+}
+#space{
+  width: 20px;
+}
+.tabla_auto td{
+  width: 25%;
+  height: 30px;
+  border-bottom: 1px solid #062737;
+}
+#divtabla{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+/*----------------------------------------------SERVICIOS----------------------------------------------*/
+.tabla_serv td{
+  width: 35%;
+  height: 30px;
+  border-bottom: 1px solid #062737;
+}
+/*----------------------------------------------CLIENTES----------------------------------------------*/
+.tabla_cliente td{
+  width: 35%;
+  height: 30px;
+  border-bottom: 1px solid #062737;
+}
+/*----------------------------------------------CRÉDITOS----------------------------------------------*/
+.tabla_creditos td{
+  width: 20%;
+  height: 30px;
+  border-bottom: 1px solid #062737;
+}
+/*----------------------------------------------REPORTES----------------------------------------------*/
+
+/*----------------------------JQuery Stuff-------------------------------------------------------*/
+
+.error{
+  border-color: red;
+  opacity: .7;
+}
+
+
+
+
+/*------------------------------------Media Queries---------------------------------------------------------------*/
+
+
+
+@media only screen and (max-width: 800px) {
+
+  #bodylogin{
+    justify-content: center;
+    display: flex;
+    background-color: #12455e;
+  }
+  /*contenedor logo*/
+  #contlogo{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+  }
+  /*contenedor de login*/
+  #contlogin{
+    background-color:white ;
+    width: 360px;
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    border-radius: 20px;
+    align-content: center;
+  }
+  /*botón iniciar sesión*/
+  #login{
+    background-color: #062737;
+    color: white;
+    width: 306px;
+    height: 40px;
+    bottom: 30px;
+    left: 25px;
+    position: absolute;
+    font-size: 20px;
+  }
+  /*input correo*/
+  #login_correo{
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    left: 25px;
+    top: 50px;
+  }
+  /*label correo*/
+  #logcorreo{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    font-size: 20px;
+  }
+  /*input contraseña*/
+  #login_contra{
+    width: 300px;
+    height: 40px;
+    position: center;
+    left: 25px;
+    top: 130px;
+  }
+  /*label contraseña*/
+  #logcontra{
+    position: absolute;
+    left: 25px;
+    top: 105px;
+    font-size: 20px;
+  }
+  /*combobox idioma*/
+  #language{
+    left: 25px;
+    top: 200px;
+    position: absolute;
+    width: 306px;
+  }
+  
+  /*----------------------------------------------INICIO----------------------------------------------*/
+  body{
+    background-color: #efefef;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+  /*barra superior*/
+  #continicio{
+    background-color: #062737;
+    height: 50px;
+    width: 365px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+  }
+  /*poner tipo/nombre de usuario*/
+  #user{
+    right: 15px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+  }
+  /*menú*/
+  #contmenu{
+    background-color: #12455e;
+    top: 50px;
+    left: 0%;
+    position: absolute;
+    color: white;
+    width: 80px;
+    height: 100%;
+    position: fixed;
+  }
+  /*contenedor principal*/
+  #contenedor{
+    width: 290px;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: right;
+    z-index: 1;
+  }
+  /*clase para diseño de contenedores dashboard*/
+  .cont{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(243, 175, 98, 0.3);
+    margin: 10px;
+    font-size: 2em;
+    color: #12455e;
+    text-align: center;
+    border-radius: 15px;
+    z-index: 2;
+  }
+  /*menu hover*/
+  .mn:hover{
+    background-color: white;
+    color: #062737;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    
+  }
+  /*clase opciones de menú*/
+  .mn{
+    font-size: 12px;
+    padding: 10px;
+  }
+  /*clase diseño div agregar nuevo*/
+  .nuevo{
+    background-color: #12455e;
+    color: white;
+    width: 233px;
+    font-size: 12px;
+    z-index: 2;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 15px;  
+    justify-content: center;
+  }
+  /*clase para diseño de tabla de consultas*/
+  .tablita{
+    width: 233px;
+    height: 100%;
+    background-color:  rgba(243, 175, 98, 0.3);
+    margin: 5px;
+    font-size: 9.5px;
+    color: #12455e;
+    border-radius: 5px;
+    z-index: 2;
+    padding: 20px;
+    justify-content: left;
+    position: relative;
+  }
+  
+  /*----------------------------------------------EMPLEADOS----------------------------------------------*/
+  thead{
+    background-color: #062737;
+    color: white;
+    text-align: center;
+  }
+  .md{
+    cursor: pointer;
+    width: 16px;
+  }
+  legend{
+    font-size: 25px;
+    text-align: center;
+  }
+  .tabla_nuevo_emp td{
+    font-size: 8px;  
+    height: 35px;
+    width: 10%;
+    
+  }
+  .tabla_emp td{
+    width: 255px;
+    height: 30px;
+    border-bottom: 1px solid #062737;
+  }
+  #cont_botones{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .botones{
+    width: 80px;
+    background-color: white;
+    color: #062737;
+    font-size: 13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+  }
+  #buscar{
+    right: 90px;
+    position: absolute;
+  }
+  #buscar_boton{
+    right: 12%;
+    position: absolute;
+  }
+  #nombre_empleado{
+    
+    font-size: 8px; 
+    width: 60px;
+    height: 13px;
+  }
+  #a_p_empleado{
+    
+    font-size: 8px; 
+    width: 60px;
+    height: 13px;
+  }
+  #a_m_empleado{
+    font-size: 8px; 
+    width: 60px;
+    height: 13px;
+  }
+  #rfc_empleado{
+    font-size: 8px; 
+    width: 60px;
+    height: 13px;
+  }
+  #s_sucursal{
+    font-size: 8px; 
+    width: 60px;
+    height: 13px;
+  }
+  #correo_empleado{
+    font-size: 8px; 
+    width: 60px;
+    height: 13px;
+  }
+#contra_empleado{
+  font-size: 8px; 
+    width: 60px;
+    height: 13px;
+  }
+#tipo_user{
+  font-size: 8px; 
+    width: 60px;
+    height: 13px;
+  }
+  /*----------------------------------------------AUTOS----------------------------------------------*/
+  .tabla_nuevo_auto td{
+    height: 20px;
+    width: 70px;
+  }
+  #space{
+    width: 20px;
+  }
+  .tabla_auto td{
+    width: 25%;
+    height: 30px;
+    border-bottom: 1px solid #062737;
+  }
+  #divtabla{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  #s_marca{
+    width: 70px;
+    
+  }
+  #modelo_auto{
+    width: 70px;
+
+  }
+
+  #precio_auto{
+    width: 70px;
+  }
+
+  #yaer_auto{
+    width: 70px;
+  }
+
+  #cancelar_empleado{
+    width: 70px;
+  }
+   #agregar_auto{
+    width: 70px;
+   }
+
+
+}
+  /*----------------------------------------------SERVICIOS----------------------------------------------*/
+  .tabla_serv td{
+    width: 35%;
+    height: 30px;
+    border-bottom: 1px solid #062737;
+  }
+  /*----------------------------------------------CLIENTES----------------------------------------------*/
+  .tabla_cliente td{
+    width: 35%;
+    height: 30px;
+    border-bottom: 1px solid #062737;
+  }
+  #historial{
+    width: 75px;
+    position: center;
+  }
+  /*----------------------------------------------CRÉDITOS----------------------------------------------*/
+  .tabla_creditos td{
+    width: 20%;
+    height: 30px;
+    border-bottom: 1px solid #062737;
+  }
+
+
+
+ 
